@@ -12,6 +12,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --light-purple:#9f67ff;
     --white: #fff;
 }
 
@@ -105,6 +106,12 @@ main {
     color: var(--white);
 }
 
+.login button:hover{
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .login>p {
     display: flex;
     justify-content: center;
@@ -145,6 +152,9 @@ main {
 
     .conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bg-desktop {
@@ -152,9 +162,11 @@ main {
         width: 100%;
     }
 
+    .descrição h1{
+        font-size: 2.25rem;
+    }
 
-
-
-
-
+    .descrição p{
+        font-size: 1rem;
+    }
 }
